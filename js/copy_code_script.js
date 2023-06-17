@@ -4,6 +4,8 @@ jQuery( document ).ready(function() {
 	var copied_text_label = copyScript.copied_text_label;
 	var copy_text_label_safari = copyScript.copy_text_label_safari;
 	var copy_text_label_other_browser = copyScript.copy_text_label_other_browser;
+	var copy_code_block_background = copyScript.copy_code_block_background;
+	var copy_code_block_text_color = copyScript.copy_code_block_text_color;
 	var copy_button_background = copyScript.copy_button_background;
 	var copy_button_text_color = copyScript.copy_button_text_color;
 	
@@ -25,13 +27,18 @@ jQuery( document ).ready(function() {
 	if (copy_button_text_color == '') {
 	  var copy_button_text_color = '#ffffff';
 	}
-	
+	//console.log(copy_code_block_background);
+	function GetCssMap(mapIdentifier) {
+		return { "background-color" :  copy_code_block_background }
+	}
+
 	var copyButton = '<div class="btn-clipboard" style="color:'+copy_button_text_color+'; background-color:'+copy_button_background+';" title="" data-original-title="Copy to clipboard">'+copy_text_label+'</div>';
 	jQuery('pre').each(function(){
 		
 		jQuery(this).wrap( '<div class="PreCodeWrapper"/>');
 		jQuery(this).css( 'padding', '2.75rem' );
-		/* jQuery(this).css( 'background-color', '#f6f6f6' ); */
+		jQuery(this).css( 'color', copy_code_block_text_color );
+		jQuery(this).css( 'background', copy_code_block_background );
 		
 	});
 	jQuery('div.PreCodeWrapper').prepend(jQuery(copyButton)).children('.btn-clipboard').show();

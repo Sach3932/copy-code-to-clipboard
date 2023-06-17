@@ -4,8 +4,8 @@ Contributors: sach3932
 Donate link: https://www.paypal.me/sachin3932/
 Tags: Code Copy, clipboard.
 Requires at least: 5.2
-Tested up to: 5.3
-Stable tag: 1.1
+Tested up to: 6.2.2
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,3 +50,8 @@ This version fixes below points.
 * Admin Settings Added.
 * Ability to change the button color and text color.
 * Removed Background-color for pre wrapper.
+
+= 1.2 =
+This version fixes below points.
+* Code restructring to maintain coding standards.
+* Ability to change the Background-color and text color for pre wrapper.
