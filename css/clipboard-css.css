@@ -1,0 +1,28 @@
+.bd-clipboard {
+    display: block;
+    /* position: relative; */
+    float: right;
+}
+.btn-clipboard {
+    right: 0rem;
+    display: inline-block;
+    position: absolute;
+    background: #000;
+    min-width: 90px;
+    width: auto;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.PreCodeWrapper {
+    position: relative;
+}
+
+/* Added 13-11-2019*/
+.form-table input[type="text"] {
+    width: 40%;
+    padding: 10px;
+}
